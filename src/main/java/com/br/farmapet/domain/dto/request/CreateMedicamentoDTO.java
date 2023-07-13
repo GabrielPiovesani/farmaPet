@@ -1,6 +1,6 @@
-package com.br.farmapet.dto;
+package com.br.farmapet.domain.dto.request;
 
-import com.br.farmapet.domain.Medicamento;
+import com.br.farmapet.domain.model.Medicamento;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -13,7 +13,7 @@ import java.util.List;
 @AllArgsConstructor
 @NoArgsConstructor
 public class CreateMedicamentoDTO {
-    private long id;
+
     private String nome;
     private String descricao;
     private double preco;

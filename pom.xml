@@ -12,7 +12,18 @@
 	<artifactId>farmaPet</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>farmaPet</name>
-	<description>farmaPet</description>
+	<description>
+		farmaPet é um projeto de estudo focado no desenvolvimento de uma API REST para o setor farmacêutico/veterinário, com o objetivo de fornecer serviços
+		relacionados ao cuidado de animais de estimação. A API permite realizar operações como, gerenciamento de medicamentos. Este projeto visa explorar
+		conceitos fundamentais de desenvolvimento de APIs REST, como criação de endpoints, manipulação de requisições HTTP,
+		implementação de autenticação/autorização, tratamento de erros e boas práticas de design de API. Além disso, serão utilizadas tecnologias como Java,
+		Spring Boot, Hibernate e outras ferramentas relevantes. O farmaPet é uma aplicação fictícia criada com fins educacionais e não possui integração
+		com sistemas reais. O objetivo principal é fornecer um ambiente de aprendizado para a construção de uma API REST completa e funcional,
+		permitindo aos desenvolvedores praticar e aprimorar suas habilidades no desenvolvimento de serviços web escaláveis e seguros.
+		Este projeto é open source e todos os interessados são bem-vindos para contribuir, fornecer feedback ou utilizá-lo como base para estudos e aprendizado.
+		Divirta-se explorando o farmaPet e bons estudos!
+	</description>
+
 	<properties>
 		<java.version>11</java.version>
 	</properties>
@@ -28,6 +39,11 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.flywaydb</groupId>
+			<artifactId>flyway-mysql</artifactId>
 		</dependency>
 
 		<dependency>
@@ -51,6 +67,18 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+
+		<dependency>
+			<groupId>org.openjfx</groupId>
+			<artifactId>javafx-controls</artifactId>
+			<version>11</version>
+		</dependency>
+		<dependency>
+			<groupId>org.openjfx</groupId>
+			<artifactId>javafx-fxml</artifactId>
+			<version>11</version>
+		</dependency>
+
 	</dependencies>
 
 	<build>

@@ -9,5 +9,4 @@ public class FarmaPetApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(FarmaPetApplication.class, args);
 	}
-
 }

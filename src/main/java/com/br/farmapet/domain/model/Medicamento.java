@@ -1,4 +1,4 @@
-package com.br.farmapet.domain;
+package com.br.farmapet.domain.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -23,4 +23,6 @@ public class Medicamento {
     private double precoDesconto;
     private String marca;
     private String fabricante;
+
+
 }

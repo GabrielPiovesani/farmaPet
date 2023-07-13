@@ -1,14 +1,9 @@
 package com.br.farmapet.controller;
 
-import com.br.farmapet.dto.CarrinhoDTO;
-import com.br.farmapet.service.CarrinhoService;
+import com.br.farmapet.domain.dto.request.CarrinhoDTO;
+import com.br.farmapet.infra.service.CarrinhoService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
-
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/carrinho")
@@ -25,5 +20,10 @@ public class CarrinhoController {
         return carrinhoService.criarCarrinho(carrinhoDTO);
     }
 
-
+    @GetMapping("/{id}")
+    public CarrinhoDTO obterCarrinho(@PathVariable Long id) {
+        return carrinhoService.obterCarrinho(id);
+    }
 }
+
+
