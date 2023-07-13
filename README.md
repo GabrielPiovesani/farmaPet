@@ -13,8 +13,10 @@ O `FarmaPet` é um projeto de estudo focado no desenvolvimento de uma API REST p
     - Parâmetros: JSON contendo as informações do medicamento a ser criado (nome, descrição, preço, etc.)
     - Resposta: JSON contendo os dados do medicamento criado, juntamente com o ID gerado pelo sistema.
     - Exemplo de uso:
-      ```json
+      ```
       POST /medicamentos/cadastrar-um-medicamento
+      ```
+      ```json
       {
         "nome": "Medicamento X",
         "descricao": "Descrição do medicamento X",
@@ -73,7 +75,7 @@ O `FarmaPet` é um projeto de estudo focado no desenvolvimento de uma API REST p
           "marca": "Marca do medicamento B",
           "fabricante": "Fabricante do medicamento B"
         },
-        ...
+        
       ]
       ```
       Para obter mais detalhes e testar as funcionalidades da API, você pode acessar o [Swagger UI](http://localhost:8080/swagger-ui/index.html#/) em seu navegador após iniciar a aplicação. O Swagger UI fornecerá uma interface interativa para visualizar e executar as operações disponíveis na API.
