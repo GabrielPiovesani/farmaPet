@@ -15,5 +15,4 @@ public class Cliente {
     private Long id;
     private String nome;
     private String email;
-    // Outros atributos e métodos getters/setters conforme necessário
 }

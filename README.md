@@ -136,3 +136,51 @@ Certifique-se de substituir `[seu-usuario]` pelo seu nome de usuário correto ao
 
 Espero que isso ajude a visualizar melhor as instruções de execução do projeto FarmaPet.
 
+## Documentação do Banco de Dados
+
+### Entidade: Medicamento
+
+A entidade `Medicamento` representa as informações de um medicamento na farmácia.
+
+| Coluna          | Tipo   | Descrição                                     |
+|-----------------|--------|-----------------------------------------------|
+| id              | Long   | Chave primária gerada automaticamente          |
+| nome            | String | Nome do medicamento                           |
+| descricao       | String | Descrição do medicamento                       |
+| preco           | double | Preço do medicamento                           |
+| precoDesconto   | double | Preço com desconto do medicamento              |
+| marca           | String | Marca do medicamento                           |
+| fabricante      | String | Fabricante do medicamento                      |
+
+### Entidade: MedicamentoInjetavel
+
+A entidade `MedicamentoInjetavel` é uma subclasse de `Medicamento` e representa medicamentos injetáveis específicos.
+
+| Coluna          | Tipo   | Descrição                                     |
+|-----------------|--------|-----------------------------------------------|
+| id              | Long   | Chave primária gerada automaticamente          |
+| tipoAplicacao   | String | Tipo de aplicação do medicamento injetável     |
+
+### Entidade: Cliente
+
+A entidade `Cliente` representa as informações de um cliente da farmácia.
+
+| Coluna          | Tipo   | Descrição                                     |
+|-----------------|--------|-----------------------------------------------|
+| id              | Long   | Chave primária gerada automaticamente          |
+| nome            | String | Nome do cliente                               |
+| email           | String | Endereço de e-mail do cliente                  |
+
+### Entidade: Carrinho
+
+A entidade `Carrinho` representa o carrinho de compras de um cliente.
+
+| Coluna          | Tipo       | Descrição                                     |
+|-----------------|------------|-----------------------------------------------|
+| id              | Long       | Chave primária gerada automaticamente          |
+| cliente_id      | Long       | Chave estrangeira para a tabela "Cliente"      |
+| medicamentos    | Medicamento[] | Lista de medicamentos no carrinho             |
+
+A tabela "carrinho" possui uma relação Many-to-One com a tabela "cliente" através da coluna "cliente_id". Além disso, a tabela "carrinho" possui uma relação One-to-Many com a tabela "medicamento" através da coluna "carrinho_id".
+
+Essa é uma documentação básica do banco de dados com base nas entidades fornecidas. Certifique-se de ajustar e otimizar o esquema de acordo com os requisitos específicos do seu projeto.
