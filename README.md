@@ -185,4 +185,4 @@ A entidade `Carrinho` representa o carrinho de compras de um cliente.
 
 A tabela "carrinho" possui uma relação Many-to-One com a tabela "cliente" através da coluna "cliente_id". Além disso, a tabela "carrinho" possui uma relação One-to-Many com a tabela "medicamento" através da coluna "carrinho_id".
 
-Essa é uma documentação básica do banco de dados com base nas entidades fornecidas. Certifique-se de ajustar e otimizar o esquema de acordo com os requisitos específicos do seu projeto.
+Essa é uma documentação básica do banco de dados com base nas entidades
